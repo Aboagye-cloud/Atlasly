@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlasly - World Countries Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>🌍 Atlasly</h1>
+            <p class="subtitle">Explore Countries Around the World</p>
+        </div>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <div class="controls">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" class="search-box" placeholder="Search countries/capital...">
+                <span class="search-icon">🔍</span>
+            </div>
+            <select id="continentFilter" class="filter-select">
+                <option value="">All Continents</option>
+                <option value="Africa">Africa</option>
+                <option value="Antarctica">Antarctica</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+
+        <div id="loadingMessage" class="loading">Loading countries...</div>
+        <div id="countriesContainer" class="countries-grid"></div>
+        <div id="noResults" class="no-results" style="display: none;">No countries found</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Atlasly. All rights reserved. Data sourced from REST Countries API.</p>
+    </footer>
+
+    <button id="backToTop">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
