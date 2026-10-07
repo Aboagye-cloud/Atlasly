@@ -2,7 +2,7 @@
 
 // REST Countries v5 (requires a free API key)
 const API_BASE = 'https://api.restcountries.com/countries/v5';
-const API_KEY = 'rc_live_2b732bb43ab346a79713b00a926ac4d6';
+const API_KEY = 'rc_live_b871385ac1614d8b8a63fa7dd866fa2c';
 
 const PAGE_SIZE = 100; // free plan maximum per request
 const FIELDS = [
